@@ -31,6 +31,12 @@ export default async (request) => {
   catch { return json({ error: "Solicitud inválida." }, 400); }
 
   const items = await readAll(store);
+  if (body.action === "candidate-get") {
+    const a = items.find(x => x.id === body.applicationId && String(x.ci || "").trim().toLowerCase() === String(body.ci || "").trim().toLowerCase());
+    if (!a) return json({ error: "No se encontró la postulación con esos datos." }, 404);
+    // Solo se devuelve el expediente propio del postulante; nunca la lista de candidatos.
+    return json({ application: { id:a.id, name:a.name, job:a.job, stage:a.stage, score:a.score ?? null, rubricStatus:a.rubricStatus || "Pendiente", assessment:a.assessment || null } });
+  }
   if (body.action === "create") {
     const a = body.application || {};
     if (!a.name || !a.email || !a.phone || !a.ci || !Number.isInteger(Number(a.job))) {
