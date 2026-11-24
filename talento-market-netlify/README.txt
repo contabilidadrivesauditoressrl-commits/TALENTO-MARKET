@@ -38,6 +38,8 @@ Los informes se abren en una ventana imprimible. Elegir Imprimir > Guardar como 
 SEGURIDAD Y CRITERIO DE SELECCION
 - El panel de RR. HH. requiere TM_ADMIN_KEY.
 - La consulta individual exige codigo de seguimiento y CI.
+- El buscador del panel de RR. HH. filtra exclusivamente por nombre y apellido del postulante. La consulta individual del postulante mantiene código de seguimiento + CI como verificación de privacidad.
+- Al registrar una postulación, se abre automáticamente la evaluación del cargo elegido y el nombre del postulante se carga en el formulario.
 - El ranking es una ayuda de decision, no una contratacion automatica. RR. HH. debe validar referencias, documentos, requisitos y criterios legales antes de decidir.
 - No se incluyen postulantes de demostracion.
 
