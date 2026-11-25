@@ -19,10 +19,12 @@ ALMACENAMIENTO
 Las postulaciones y evaluaciones se guardan en Netlify Blobs. No se guardan en localStorage. La primera lectura/escritura puede requerir que Netlify complete la inicializacion del almacenamiento en el sitio desplegado.
 
 FLUJO DEL POSTULANTE
-1. Completa la postulacion y recibe un codigo UUID de seguimiento.
-2. Inicia la prueba tecnica, dos preguntas STAR y el caso situacional.
-3. Si cierra la pagina, puede volver a la seccion de consulta e ingresar codigo y CI.
-4. Cuando RR. HH. concluya la rubrica, puede consultar y generar su informe de resultados.
+1. Entra a Vacantes y selecciona uno de los 8 cargos.
+2. Completa el formulario de postulación y envía sus datos. El sistema registra la postulación y muestra un código único de seguimiento.
+3. La evaluación se abre automáticamente para el cargo elegido. Debe responder las 5 preguntas técnicas, las 2 preguntas STAR y el caso práctico; luego pulsa “Guardar respuestas”.
+4. El sistema corrige la prueba técnica y registra las respuestas abiertas para revisión de Recursos Humanos. La etapa queda “Evaluación pendiente de rúbrica”.
+5. Si cierra la página antes de terminar, entra a “Consultar mi postulación”, introduce el código y CI y continúa si la evaluación todavía no fue enviada.
+6. Cuando RR. HH. termina la rúbrica, el postulante consulta el estado y puede generar su informe individual.
 
 FLUJO DE RECURSOS HUMANOS
 1. Ingresar al panel con TM_ADMIN_KEY.
